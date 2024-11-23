@@ -10,7 +10,7 @@ public class Main {
             try {
                 d.getDisplayMenu();
                 int choice = scanner.nextInt();
-                scanner.nextLine(); // Consume newline character
+                scanner.nextLine(); 
 
                 switch (choice) {
                     case 1:
@@ -36,7 +36,7 @@ public class Main {
                 System.out.println("+---------------------------------------+");
                 System.out.println("|   Invalid input. Please try again.    |");
                 System.out.println("+---------------------------------------+");
-                scanner.nextLine(); // Clear invalid input
+                scanner.nextLine();
             }
         }
     }
@@ -74,16 +74,17 @@ public class Main {
 
         String role = password.contains("@") ? "Admin" : "User";
         boolean success = Account.register(username, password, role);
-
+        
         if (success) {
-            System.out.println("+---------------------------------------+");
-            System.out.println("| Registration successful as " + role + ".   |");
-            System.out.println("+---------------------------------------+");
+            System.out.println("+-----------------------------------+");
+            System.out.println(" Registration successful as " + role + ".");
+            System.out.println("+-----------------------------------+");
         } else {
             System.out.println("+-----------------------------------+");
             System.out.println("| Registration failed. Try again.   |");
             System.out.println("+-----------------------------------+");
         }
+
     }
 
     public static void userMenu(User user) {
@@ -91,7 +92,7 @@ public class Main {
             try {
                 d.getDisplayUser(user);
                 int choice = scanner.nextInt();
-                scanner.nextLine(); // Consume newline character
+                scanner.nextLine(); 
 
                 switch (choice) {
                     case 1:
@@ -112,7 +113,7 @@ public class Main {
                 System.out.println("+---------------------------------------+");
                 System.out.println("|   Invalid input. Please try again.    |");
                 System.out.println("+---------------------------------------+");
-                scanner.nextLine(); // Clear invalid input
+                scanner.nextLine(); 
             }
         }
     }
@@ -122,7 +123,7 @@ public class Main {
             try {
                 d.getDisplayAdmin(admin);
                 int choice = scanner.nextInt();
-                scanner.nextLine(); // Consume newline character
+                scanner.nextLine();
 
                 switch (choice) {
                     case 1:
@@ -149,7 +150,7 @@ public class Main {
                 System.out.println("+---------------------------------------+");
                 System.out.println("|   Invalid input. Please try again.    |");
                 System.out.println("+---------------------------------------+");
-                scanner.nextLine(); // Clear invalid input
+                scanner.nextLine(); 
             }
         }
     }
@@ -157,7 +158,7 @@ public class Main {
     public static void viewCategory() {
         d.viewResources();
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
     
         String category;
         switch (choice) {
@@ -172,10 +173,9 @@ public class Main {
                 return;
         }
     
-        // Fetch resources by category
         List<Resource> resources = Resource.fetchResourcesByCategory(category);
     
-        // Display the resources
+
         if (resources.isEmpty()) {
             System.out.println("+------------------------------------------+");
             System.out.println("|   No resources found in this category.   |");
@@ -191,7 +191,7 @@ public class Main {
     public static void addResource(Admin admin) {
         d.viewResources();
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
         
         String category;
         switch (choice) {
@@ -228,7 +228,6 @@ public class Main {
         System.out.print("Enter resource name to remove: ");
         String name = scanner.nextLine();
     
-        // Use Resource's removeResourceFromDB method to remove the resource
         if (Resource.removeResourceFromDB(name)) {
             System.out.println("+-----------------------------------+");
             System.out.println("|   Resource removed successfully.  |");
