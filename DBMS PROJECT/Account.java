@@ -2,6 +2,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 
 public abstract class Account {
     private String username;
@@ -22,7 +23,6 @@ public abstract class Account {
 
     public abstract void displayMenu();
 
-    // Static method for login
     public static Account login(String username, String password) {
         String query = "SELECT * FROM accounts WHERE username = ? AND password = ?";
         try (Connection conn = DatabaseConnection.getConnection();
@@ -43,24 +43,28 @@ public abstract class Account {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return null; // Return null if login fails
+        return null;
     }
 
-    // Static method for registration
     public static boolean register(String username, String password, String role) {
-        String query = "INSERT INTO accounts (username, password, role) VALUES (?, ?, ?)";
-        try (Connection conn = DatabaseConnection.getConnection();
-             PreparedStatement stmt = conn.prepareStatement(query)) {
-            stmt.setString(1, username);
-            stmt.setString(2, password);
-            stmt.setString(3, role);
-            stmt.executeUpdate();
-            return true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
+    String query = "INSERT INTO accounts (username, password, role) VALUES (?, ?, ?)";
+    try (Connection conn = DatabaseConnection.getConnection();
+         PreparedStatement stmt = conn.prepareStatement(query)) {
+        stmt.setString(1, username);
+        stmt.setString(2, password);
+        stmt.setString(3, role);
+        stmt.executeUpdate();
+        return true;
+    } catch (SQLIntegrityConstraintViolationException e) {
+        System.out.println("+-------------------------------+");
+        System.out.println("|   Username already exists.    |");
+        System.out.println("+-------------------------------+");
+        return false; 
+    } catch (SQLException e) {
+        e.printStackTrace();
+        return false;
     }
+}
 }
 
 class User extends Account {
@@ -70,7 +74,7 @@ class User extends Account {
 
     @Override
     public void displayMenu() {
-        System.out.println("User-specific menu options here.");
+        System.out.printf("User");
     }
 }
 
@@ -81,6 +85,6 @@ class Admin extends Account {
 
     @Override
     public void displayMenu() {
-        System.out.println("Admin-specific menu options here.");
+        System.out.printf("Admin");
     }
 }
