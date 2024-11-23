@@ -38,10 +38,10 @@ public class Resource {
     public String toString() {
         return String.format(
             "+--------------------------------+\n" +
-            "| Category: %-20s |\n" +
-            "| Name: %-23s |\n" +
-            "| Location: %-20s |\n" +
-            "| Details: %-20s |\n" +
+            " Category: %-20s \n" +
+            " Name: %-23s \n" +
+            " Location: %-20s \n" +
+            " Details: %-20s \n" +
             "+--------------------------------+",
             category, name, location, details
         );
