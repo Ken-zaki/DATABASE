@@ -104,8 +104,25 @@ Welcome to the **Local Resource Finder**—a Java-based application designed to 
 
 Below is an illustration of how to use the program.
 
+## User
+
 ![How to Use](https://github.com/user-attachments/assets/4cb9e40e-cf10-4d02-89f4-4ef310e00f40)
 ![How to Use](https://github.com/user-attachments/assets/dfc272c5-ba24-449f-a89c-a684adbdee0d)
+![How to Use](https://github.com/user-attachments/assets/f9b0a233-3e97-4e5e-9ee5-0b83d3a432b9)
+
+## Admin
+
+![How to Use](https://github.com/user-attachments/assets/cee1f233-2973-4c6a-a402-ebaf386fa872)
+![adui](https://github.com/user-attachments/assets/8b5e1eba-422a-4014-9e23-4a826c51e5ee)
+![adaddre](https://github.com/user-attachments/assets/63c93b43-3920-4499-a5ee-f0b98a526933)
+![lookafteradd](https://github.com/user-attachments/assets/6795b199-3a93-4dc6-9279-683f12eb9997)
+![revad](https://github.com/user-attachments/assets/6e265f3f-b57a-4203-ad9c-68729d8fc39c)
+
+## Database looklike
+
+![db](https://github.com/user-attachments/assets/0a58fdad-10b3-4216-a770-96e984bde0db)
+![role](https://github.com/user-attachments/assets/b5e32edb-5905-4b3c-8b40-219e0eea56a6)
+![res](https://github.com/user-attachments/assets/3a0c81a3-4d85-4e3a-8413-8aa45d6c8582)
 
 ---
 
