@@ -104,7 +104,8 @@ Welcome to the **Local Resource Finder**—a Java-based application designed to 
 
 Below is an illustration of how to use the program.
 
-![How to Use]([path/to/your/image.png](https://github.com/user-attachments/assets/4cb9e40e-cf10-4d02-89f4-4ef310e00f40))
+![How to Use](https://github.com/user-attachments/assets/4cb9e40e-cf10-4d02-89f4-4ef310e00f40)
+![How to Use](https://github.com/user-attachments/assets/dfc272c5-ba24-449f-a89c-a684adbdee0d)
 
 ---
 
