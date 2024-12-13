@@ -55,7 +55,7 @@ Welcome to the **Local Resource Finder**—a Java-based application designed to 
   );
 
   CREATE TABLE resources (
-      id INT AUTO_INCREMENT PRIMARY KEY,
+      resourceID INT AUTO_INCREMENT PRIMARY KEY,
       category VARCHAR(20),
       name VARCHAR(50),
       location VARCHAR(100),
