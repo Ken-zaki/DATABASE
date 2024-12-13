@@ -1,3 +1,10 @@
+<div align="center">
+    <a href="https://github.com/Ken-zaki" target="_blank">
+        <img src="![Red_minimalist_map_pin_logo-removebg-preview](https://github.com/user-attachments/assets/e84486d4-79ad-4c12-8605-5d24cd397edb)" 
+        alt="Logo" width="290" height="290">
+    </a>
+</div>
+
 # Local Resource Finder (Batangas Area) ⛳
 
 Welcome to the **Local Resource Finder**—a Java-based application designed to help manage and find resources in the Batangas area! This project uses a MySQL database for storing and managing data and differentiates between users and administrators for tailored functionalities.
