@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://github.com/Ken-zaki" target="_blank">
-        <img src="![Red_minimalist_map_pin_logo-removebg-preview](https://github.com/user-attachments/assets/e84486d4-79ad-4c12-8605-5d24cd397edb)" 
+        <img src="https://github.com/user-attachments/assets/e84486d4-79ad-4c12-8605-5d24cd397edb" 
         alt="Logo" width="290" height="290">
     </a>
 </div>
