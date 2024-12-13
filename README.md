@@ -44,22 +44,22 @@ Welcome to the **Local Resource Finder**—a Java-based application designed to 
   ```sql
   CREATE TABLE accounts (
       user_id INT AUTO_INCREMENT PRIMARY KEY,
-      username VARCHAR(50) UNIQUE NOT NULL,
-      password VARCHAR(255) NOT NULL
+      username VARCHAR(20) UNIQUE ,
+      password VARCHAR(30) 
   );
 
   CREATE TABLE account_role (
       user_id INT,
-      role ENUM('Admin', 'User'),
+      role VARCHAR(20),
       FOREIGN KEY (user_id) REFERENCES accounts(user_id)
   );
 
   CREATE TABLE resources (
       id INT AUTO_INCREMENT PRIMARY KEY,
-      category VARCHAR(50),
-      name VARCHAR(100),
+      category VARCHAR(20),
+      name VARCHAR(50),
       location VARCHAR(100),
-      details TEXT
+      details VARCHAR(200)
   );
   ```
 
