@@ -134,7 +134,7 @@ Below is an illustration of how to use the program.
 ---
 
 ## Authors 🌟
-- **John Kenneth Valdez** – *Initial work* – [Ken]([https://github.com/your-profile](https://github.com/Ken-zaki))
+- **John Kenneth Valdez** – [Ken]([https://github.com/your-profile](https://github.com/Ken-zaki))
 
 
 
