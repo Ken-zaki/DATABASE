@@ -66,7 +66,7 @@ Welcome to the **Local Resource Finder**—a Java-based application designed to 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo-name/local-resource-finder.git
+   git clone https://github.com/Ken-zaki/DATABASE.git
    ```
 
 2. Open the project in your preferred IDE.
